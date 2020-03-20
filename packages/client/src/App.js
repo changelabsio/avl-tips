@@ -48,7 +48,7 @@ function App() {
                     <a
                       target="_blank"
                       rel="noreferrer noopener"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSeVXG4EkNvg4iyAeYzRz45yiiadNh_OYZ9MG9moS4acJm_OFA/viewform"
+                      href="https://https://docs.google.com/forms/d/e/1FAIpQLScM6IQ-WiWdt3Uq3unNmg-XiJLYQslrlxzNZ7XHVjHGB1GamA/viewform"
                     >
                       please fill out this form
                     </a>
