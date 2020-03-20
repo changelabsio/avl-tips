@@ -3,9 +3,11 @@ import React from "react";
 import Employee from "./Employee/Employee";
 import Error from "./Error/Error";
 import api from "./utils/api/api";
+import Config from "./Config"
 
 import "bulma/css/bulma.min.css";
 import "./App.css";
+
 
 function App() {
   const [employee, setEmployee] = React.useState();
@@ -19,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="background-container" style={{backgroundImage: `url("${Config.image.src}")`}}>
       <section className="section">
         <div className="container">
           <div className="columns is-centered">
@@ -27,7 +29,7 @@ function App() {
               <div className="card has-background-grey-dark has-text-light">
                 <div className="card-content">
                   <p className="title has-text-light is-size-6-mobile">
-                    Help the Asheville Service Industry
+                    Help the {Config.city} Service Industry
                   </p>
                   <p className="subtitle has-text-light is-size-6-mobile">
                     Every time you have a drink at home during social
@@ -40,12 +42,12 @@ function App() {
                   </p>
                   <p className="subtitle has-text-light"></p>
                   <p>
-                    If you are a service industry worker impacted by this in
-                    Asheville,{" "}
+                    If you are a service industry worker impacted by this in{" "}
+                    {Config.city}, {Config.state ? `${Config.state},` : ``}{" "}
                     <a
                       target="_blank"
                       rel="noreferrer noopener"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSeVXG4EkNvg4iyAeYzRz45yiiadNh_OYZ9MG9moS4acJm_OFA/viewform"
+                      href={Config.form.url}
                     >
                       please fill out this form
                     </a>
@@ -67,17 +69,17 @@ function App() {
 
       <footer className="support-footer has-text-white">
         <a
-          href="https://www.flickr.com/photos/mogmismo/"
+          href={Config.image.attr.href}
           className="has-text-white"
         >
-          Image: mogmismo
+          Image: {Config.image.attr.name}
         </a>{" "}
         |{" "}
-        <a href="mailto:inquiries@avl.tips" className="has-text-white">
+        <a href={`mailto:${Config.mailto}`} className="has-text-white">
           Questions and Data Privacy Inquiries
         </a>
       </footer>
-    </>
+    </div>
   );
 }
 
