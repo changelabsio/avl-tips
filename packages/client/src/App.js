@@ -29,7 +29,7 @@ function App() {
               <div className="card has-background-grey-dark has-text-light">
                 <div className="card-content">
                   <p className="title has-text-light is-size-6-mobile">
-                    Help the Asheville Service Industry
+                    Help the SF / Bay Area Service Industry
                   </p>
                   <p className="subtitle has-text-light is-size-6-mobile">
                     Every time you have a drink at home during social
@@ -43,7 +43,7 @@ function App() {
                   <p className="subtitle has-text-light"></p>
                   <p>
                     If you are a service industry worker impacted by this in
-                    Asheville,{" "}
+                    the Bay Area,{" "}
                     <a
                       target="_blank"
                       rel="noreferrer noopener"
