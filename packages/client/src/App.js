@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   const [employee, setEmployee] = React.useState();
   const [error, setError] = React.useState();
-
+  /*
   React.useEffect(() => {
     axios
       .get(
@@ -19,6 +19,7 @@ function App() {
       .then(response => setEmployee(response.data))
       .catch(responseError => setError(responseError));
   }, []);
+  */
 
   return (
     <>
@@ -59,9 +60,9 @@ function App() {
 
           <div className="columns is-centered">
             <div className="column is-mobile is-two-thirds-tablet is-half-desktop">
-              {employee && <Employee {...employee} />}
+              {/* {employee && <Employee {...employee} />}
 
-              {error && <Error {...error} />}
+              {error && <Error {...error} />} */}
             </div>
           </div>
         </div>
