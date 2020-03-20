@@ -69,13 +69,13 @@ function App() {
 
       <footer className="support-footer has-text-white">
         <a
-          href="https://www.flickr.com/photos/mogmismo/"
+          href="https://www.matthq.com/"
           className="has-text-white"
         >
-          Image: mogmismo
+          Image / site: Matt Davis
         </a>{" "}
         |{" "}
-        <a href="mailto:inquiries@avl.tips" className="has-text-white">
+        <a href="mailto:vegeneric@gmail.com" className="has-text-white">
           Questions and Data Privacy Inquiries
         </a>
       </footer>
