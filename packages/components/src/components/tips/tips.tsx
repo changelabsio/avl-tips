@@ -10,7 +10,7 @@ type Employee = {
 };
 
 @Component({
-  tag: config.wc.tag,
+  tag: "avl-tips", // this throws an error when set using config.wc.tag,
   styleUrl: "tips.css",
   shadow: true
 })
