@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "yarn build:netlify"
+  command = "npm run build:netlify"
 
 [[headers]]
   for = "/wc/*"
