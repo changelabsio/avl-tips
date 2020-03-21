@@ -17,7 +17,7 @@
   "scripts": {
     "prebuild": "mkdir -p ../../build",
     "build": "react-scripts build",
-    "postbuild": "cp -r ./build/* ../../build",
+    "postbuild": "env && cp -r ./build/* ../../build",
     "start": "PORT=3000 HOST=localhost react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
