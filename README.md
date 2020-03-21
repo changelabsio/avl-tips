@@ -20,6 +20,6 @@ Configuration of the client can be overridden using Environment variables as des
 
 # Local Development
 
-1. Run `yarn prebuild build` from the project root.
+1. Run `npm run build:all` from the project root.
 2. `cd packages/client`
-3. `yarn start`
+3. `npm start`
