@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet'
 
 import Employee from "./Employee/Employee";
 import Error from "./Error/Error";
@@ -8,6 +9,7 @@ import Config from "./Config"
 import "bulma/css/bulma.min.css";
 import "./App.css";
 
+const TITLE = `Help the ${Config.city} Service Industry`;
 
 function App() {
   const [employee, setEmployee] = React.useState();
@@ -21,6 +23,11 @@ function App() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <title>{TITLE}</title>
+      <meta name="description" content={TITLE} />
+    </Helmet>
     <div className="background-container" style={{backgroundImage: `url("${Config.image.src}")`}}>
       <section className="section">
         <div className="container">
@@ -69,7 +76,7 @@ function App() {
 
       <footer className="support-footer has-text-white">
         <a
-          href={Config.image.attr.href}
+          href={Config.image.attr.url}
           className="has-text-white"
         >
           Image: {Config.image.attr.name}
@@ -80,6 +87,7 @@ function App() {
         </a>
       </footer>
     </div>
+    </>
   );
 }
 

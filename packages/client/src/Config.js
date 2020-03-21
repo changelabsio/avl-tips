@@ -10,7 +10,7 @@ export default {
         src: process.env.REACT_APP_IMAGE_SRC || "/avl.jpg",
         attr: {
             name: process.env.REACT_APP_IMAGE_ATTR_NAME || "mogmismo",
-            href: process.env.REACT_APP_IMAGE_ATTR_LINK || "https://www.flickr.com/photos/mogmismo/",
+            url: process.env.REACT_APP_IMAGE_ATTR_URL || "https://www.flickr.com/photos/mogmismo/",
         }
     },
     api: {

@@ -1,5 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment to netlify
+
+[![Deploy to netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/changelabsio/avl-tips)
+
+### Build Environment Variables
+
+Configuration of the client can be overridden using Environment variables as described below:
+
+* `REACT_APP_CITY` - Your city
+* `REACT_APP_STATE` (optional) - Your state
+* `REACT_APP_MAILTO` - Your email address for Questions and Data Privacy Inquiries
+* `REACT_APP_FORM_URL` - URL for google form
+* `REACT_APP_IMAGE_SRC` - URL for background image
+* `REACT_APP_IMAGE_ATTR_NAME` - Image attribution name
+* `REACT_APP_IMAGE_ATTR_URL` - Image attribution url for links
+* `REACT_APP_API_DEV_URL` - Development api base url
+* `REACT_APP_API_PROD_URL` - Production api base url
+
+
 ## Available Scripts
 
 In the project directory, you can run:
