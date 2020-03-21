@@ -17,6 +17,7 @@ Configuration of the client can be overridden using Environment variables as des
 * `REACT_APP_IMAGE_ATTR_URL` - Image attribution url for links
 * `REACT_APP_API_DEV_URL` - Development api base url
 * `REACT_APP_API_PROD_URL` - Production api base url
+* `REACT_APP_WC_TAG` - Web Component tag ex: `avl-tips` will produce a web component with the tag `<avl-tips />`
 
 # Local Development
 
