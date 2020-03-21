@@ -1,6 +1,6 @@
 import { Component, Host, State, h } from "@stencil/core";
 import axios from "axios";
-import config from "../config"
+import config from "../../config"
 
 type Employee = {
   name: string;
