@@ -8,7 +8,7 @@
     "lerna": "^3.16.4"
   },
   "scripts": {
-    "prebuild": "lerna bootstrap",
+    "prebuild": "env > .env && lerna bootstrap",
     "build": "lerna run build --stream",
     "build:all": "npm run prebuild && npm run build"
   },
